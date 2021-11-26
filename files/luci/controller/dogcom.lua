@@ -6,7 +6,7 @@ function index()
         return
     end
     local page
-    page = entry({"admin", "servers", "dogcom"}, cbi("dogcom"), _("Drcom通用"), 100)
+    page = entry({"admin", "services", "dogcom"}, cbi("dogcom"), _("Drcom通用"), 100)
     page.i18n = "dogcom"
     page.dependent = true
 end
