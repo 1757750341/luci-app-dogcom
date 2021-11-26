@@ -1,5 +1,3 @@
--- Copyright (C) 2017 fuyumi <280604399@qq.com>
--- Licensed to the public under the GNU Affero General Public License v3.
 
 module("luci.controller.dogcom", package.seeall)
 
@@ -8,7 +6,7 @@ function index()
         return
     end
     local page
-    page = entry({"admin", "network", "dogcom"}, cbi("dogcom"), _("dogcom"), 100)
+    page = entry({"admin", "servers", "dogcom"}, cbi("dogcom"), _("Drcom通用"), 100)
     page.i18n = "dogcom"
     page.dependent = true
 end
